@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Laptop Dell",
+        "price": "1200",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38b8sN8-144nZVRnyp3muMqTR1FkPRqINFK0H4FNPdPZFm5PWAqLvzJv4vXaG1ehUk8o&usqp=CAU",
+        "text": "lorem , this laptop is very smoot . ram 8 and rom 1k"
+    },
+    {
+        "id": "2",
+        "name": "Laptop Hp",
+        "price": "1300",
+        "img": "https://img.etimg.com/photo/msid-93619818/apple-laptops.jpg",
+        "text": "lorem , this laptop is very smoot . ram 8 and rom "
+    },
+    {
+        "id": "3",
+        "name": "Laptop new Hp",
+        "price": "1100",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV3mhFMLM44H9_HO-t-_INSsCe7a99FpZY8RF9nLdI2ol9_csbkx2fd98zzzY39MX_tjw&usqp=CAU",
+        "text": "this is lorem , this laptop is very smoot . ram 8 and rom "
+    }
+]

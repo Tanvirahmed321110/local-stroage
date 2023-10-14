@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="bg-black">
+        <div id="wraper">
+            <div id="form">
+                <div class="form-container p-5 text-white w-50 mx-auto mt-5">
+                    <h2 class="text-center">Form Simple</h2>
+                    <div class="form-wraper">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="input-name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Password </label>
+                                <input type="password" class="form-control" id="input-password"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div id="error-text"></div>
+                            <button id="btn-submit" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div> <br>
+                    <hr>
+                    <div class="output text-black">
+                        <h5 class="text-center"></h5>
+                        <p>Name : </p>
+                        <p>Email : </p>
+                        <p>Password : </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="app.js"></script>
+        <!-- email js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("2sOOj6NACyvwt20IC");
+            })();
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="totdo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wraper">
+        <div id="todo-app">
+            <div class="todo-wraper">
+                <div class="todo-container">
+                    <h1>To do app 2023</h1>
+                    <div class="add-item">
+                        <div class="add-item-container">
+                            <form action="">
+                                <input id="input-add" type="text" placeholder="Your Task Name..">
+                                <button id="btn-submit" type="submit">Add Task</button>
+                            </form>
+                            <div id="error-div">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-item">
+                        <div class="display-item-container">
+                            <h2>My Task List</h2>
+                            <div class="all-list">
+                                <div class="single-list">
+                                    <i class="icon-1 fa-solid fa-circle"></i>
+                                    <input type="text" value="My Task One" readonly>
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-complete">Complete</button>
+                                    <button class="btn-delete">Delete</button>
+                                </div>
+                                <div class="single-list">
+                                    <i class="icon-1 fa-solid fa-circle"></i>
+                                    <input type="text" value="My Task One" readonly>
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-complete">Complete</button>
+                                    <button class="btn-delete">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <!-- add product -->
+        <div id="add-product">
+            <div class="add-product-wraper">
+                <div class="add-product-form">
+                    <h2>Add New Product</h2>
+                    <form id="cart-form" action="">
+                        <input required id="input-product-name" type="text" placeholder="*Product Name">
+                        <input required id="input-product-url" type="text" placeholder="*Image URL">
+                        <input required id="input-product-price" type="text" placeholder="*Product $Price">
+                        <textarea required id="input-product-details" name="" placeholder="*Product Datails" id="" cols="30" rows="10"></textarea>
+                        <button>Add Product</button>
+                    </form>
+                </div>
+                <div class="add-product-container">
+                    <div class="single-product">
+                        <img  src="https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvMDUyY2FjZjItYzA2YS00ZWQyLWExZjctMGE1YWViMDUyYTRhXzEuNzc5Y2M5NmUwOWE2NGFjNGE2MjkwNTIxN2U1MGY3NzIuanBlZw.jpg" alt="">
+                        <div class="product-data">
+                            <h4 class="product-name">KeyBord Mouse</h4>
+                            <h4 class="product-price">Price : 55$</h4>
+                            <p class="product-deatils">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellat minus necessitatibus voluptate quis adipisci aspernatur ad alias? Quam sit tempore nemo!</p>
+                            <div class="div-btn"><button class="bnt-add-to-cart">Add To Card</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- product json -->
+        <h2>Total <span id="total"></span> $</h2>
+        <div id="product-json">
+            <div class="items">
+            
+            </div>
+                <div class="cart-products">
+                    <div class="cart-product-single">
+                        <img width="50" height="50" src="${item.img}" alt="">
+                        <h3>Price : ${item.price}$</h3>
+                        <h3>${item.name}</h3>   
+                        <p>${item.text}</p>
+                        <button class="remove-cart">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
